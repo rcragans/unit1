@@ -1,0 +1,12 @@
+    1  which zsh
+    2  cd ~/Development/
+    3  pwd
+    4  clear
+    5  pwd
+    6  cd unit1
+    7  pwd
+    8  ls
+    9  touch history.txt
+   10  ls
+   11  git init
+   12  clear
