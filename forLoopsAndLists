@@ -1,0 +1,43 @@
+# for i in range(1,10):
+#    print i
+# for i in range(1,10,2):
+#    print i
+
+
+student1 = "Brian"
+student2 = "Brandon"
+student3 = "Zac"
+student4 = "J.R."
+students = [student1,student2,student3,student4]
+numOfStudents = len(students)
+for i in range (0,numOfStudents):
+    print "Welcome to class, %s" % students[i]
+
+
+atlanta_teams = []
+atlanta_teams.append("Falcons")
+print atlanta_teams
+atlanta_teams.append("Braves")
+print atlanta_teams
+atlanta_teams.append("Hawks")
+print atlanta_teams
+atlanta_teams.append("Thrashers")
+print atlanta_teams
+
+atlanta_teams.pop()
+print atlanta_teams
+atlanta_teams.append("United")
+print atlanta_teams
+
+atlanta_teams.sort()
+print atlanta_teams
+
+atlanta_teams.reverse()
+print atlanta_teams
+
+reindeer = "Dasher, Dancer, Prancer, Vixon"
+reindeerAsAList = reindeer.split(', ')
+print reindeerAsAList
+
+dancerPrancer = reindeerAsAList[1:3]
+print dancerPrancer
