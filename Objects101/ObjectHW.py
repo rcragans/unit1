@@ -1,3 +1,4 @@
+
 class Person(object):
     def __init__(self,name,email,phone):
         self.name = name
@@ -17,13 +18,18 @@ class Person(object):
         if self.greet > 0:
             greeting_count += 1
             print greeting_count
+    def __repr__(self):
+        return '%r, %r, %r' % (self.name, self.email, self.phone)
 sonny = Person('Sonny','sonny@hotmail.com','483-485-4948')
 jordan = Person('Jordan','jordan@aol.com','495-586-3456')
+julie = Person('','','')
 sonny.add_friend("Julie")
 sonny.add_friend("Jordan")
 sonny.num_friends()
 sonny.greet(jordan)
 jordan.greet(sonny)
+sonny.greeting_count()
+sonny.greet(julie)
 sonny.greeting_count()
 sonny.print_contact_info()
 jordan.print_contact_info()
